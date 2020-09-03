@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>Property with Serialize Field</Title>
+            <Author>Bartha Szabolcs</Author>
+            <Description>Creates a Property with the field decorated with SerializeField attribute.</Description>
+            <Shortcut>serp</Shortcut>
+        </Header>
+        <Snippet>
+            <Code Language="CSharp">
+                <![CDATA[[field: SerializeField] $PropertyModifier$ $Type$ $Name${$GetModifier$get;$SetModifier$set;}$end$]]>
+            </Code>
+            <Declarations>
+                <Literal>
+                    <ID>PropertyModifier</ID>
+                    <ToolTip>The acces modifier of the Property.</ToolTip>
+                    <Default>public</Default>
+                </Literal>
+                <Literal>
+                    <ID>Type</ID>
+                    <ToolTip>Type of the field.</ToolTip>
+                    <Default>float</Default>
+                </Literal>
+                <Literal>
+                    <ID>Name</ID>
+                    <ToolTip>Name of the Property.</ToolTip>
+                    <Default>mySerializedProperty</Default>
+                </Literal>
+                <Literal>
+                    <ID>GetModifier</ID>
+                    <ToolTip>The acces modifier of the Get method.</ToolTip>
+                    <Default></Default>
+                </Literal>
+                <Literal>
+                    <ID>SetModifier</ID>
+                    <ToolTip>The acces modifier of the Set method.</ToolTip>
+                    <Default></Default>
+                </Literal>
+            </Declarations>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>
