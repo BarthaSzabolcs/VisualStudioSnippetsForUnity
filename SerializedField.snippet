@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>Private Serialize Field</Title>
+            <Author>Bartha Szabolcs</Author>
+            <Description>Creates a private field decorated with SerializeField attribute.</Description>
+            <Shortcut>serf</Shortcut>
+        </Header>
+        <Snippet>
+            <Code Language="CSharp">
+                <![CDATA[[SerializeField] private $Type$ $Name$;$end$]]>
+            </Code>
+            <Declarations>
+                <Literal>
+                    <ID>Type</ID>
+                    <ToolTip>Type of the field.</ToolTip>
+                    <Default>float</Default>
+                </Literal>
+                <Literal>
+                    <ID>Name</ID>
+                    <ToolTip>Name of the field.</ToolTip>
+                    <Default>myField</Default>
+                </Literal>
+            </Declarations>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>
