@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>Full property with existing backingfield</Title>
+            <Author>Bartha Szabolcs</Author>
+            <Description>Creates a full property without creating a backingfield for it.</Description>
+            <Shortcut>propbf</Shortcut>
+        </Header>
+        <Snippet>
+            <Code Language="CSharp">
+                <![CDATA[$PropertyModifier$ $Type$ $PropertyName$ 
+		{ 
+			get
+			{
+				return $BackingFieldName$;
+			}
+			set
+			{
+				$BackingFieldName$ = value;
+			}
+		}$end$]]>
+            </Code>
+            <Declarations>
+                <Literal>
+                    <ID>PropertyModifier</ID>
+                    <ToolTip>The acces modifier of the Property.</ToolTip>
+                    <Default>public</Default>
+                </Literal>
+                <Literal>
+                    <ID>Type</ID>
+                    <ToolTip>Type of the field.</ToolTip>
+                    <Default>float</Default>
+                </Literal>
+                <Literal>
+                    <ID>PropertyName</ID>
+                    <ToolTip>Name of the Property.</ToolTip>
+                    <Default>myProperty</Default>
+                </Literal>
+                <Literal>
+                    <ID>BackingFieldName</ID>
+                    <ToolTip>Name of the BackingField.</ToolTip>
+                    <Default>myBackingField</Default>
+                    <Default></Default>
+                </Literal>
+            </Declarations>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>
